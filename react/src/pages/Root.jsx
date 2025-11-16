@@ -1,5 +1,7 @@
 import MyButton from "@components/Button/MyButton";
 import MyProfile from "@components/Profile/MyProfile";
+import CounterForm from "@components/Hooks/CounterForm";
+import GreetingForm from "@components/Hooks/GreetingForm";
 
 import AboutPage from "./About/AboutPage";
 import ShoppingList from "./Shop/ShoppingList";
@@ -17,6 +19,8 @@ export default function Root() {
       <Greeting name="World" />
       <MyProfile />
       <ShoppingList />
+      <CounterForm />
+      <GreetingForm />
     </>
   )
 }
