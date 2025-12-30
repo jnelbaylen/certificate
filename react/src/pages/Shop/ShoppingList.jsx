@@ -1,22 +1,34 @@
-const product = [
-    { title: 'Cabbage', isFruit: false, id: 1 },
-    { title: 'Garlic', isFruit: false, id: 2 },
-    { title: 'Apple', isFruit: true, id: 3 },
+const Product = [
+    { 
+        title: 'Cabbage', 
+        isFruit: false, 
+        id: 1 
+    },
+    { 
+        title: 'Garlic', 
+        isFruit: false, 
+        id: 2 
+    },
+    { 
+        title: 'Apple', 
+        isFruit: true, 
+        id: 3 
+    },
 ];
 
-export default function ShoppingList()  {
-    const listItems = product.map(product =>
+export const ShoppingList = () => {
+    const listItems = Product.map(Product =>
         <li
-            key={product.id}
+            key={ Product.id }
             style={{
-                color: product.isFruit ? 'red' : 'darkgreen',
+                color: Product.isFruit ? 'red' : 'darkgreen',
             }}
         >
-            {product.title}
+            { Product.title }
         </li>
     );
 
     return (
-        <ul>{listItems}</ul>
+        <ul>{ listItems }</ul>
     );
 }
