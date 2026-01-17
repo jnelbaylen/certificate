@@ -116,3 +116,21 @@ button:hover {
     width: 300px;
   }
 }
+
+#search-input {
+  padding: 10px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#results {
+  text-align: left;
+  max-height: 150px;
+  overflow-y: auto;
+}
+.result-item {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
