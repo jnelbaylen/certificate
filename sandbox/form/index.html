@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Survey Form</title>
 </head>
 <body>
     <h1 id="title">freeCodeCamp Survey Form</h1>
@@ -23,44 +23,64 @@
         <select id="dropdown">
             <option>Select current role</option>
             <option value="Student">Student</option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
+            <option value="Full Time Job">Full Time Job</option>
+            <option value="Full Time Learner">Full Time Learner</option>
+            <option value="Prefer not to stay">Prefer not to stay</option>
+            <option value="Other">Other</option>
         </select><br>
 
         <p>Would you recommend freeCodeCamp to a friend?</p>
 
-        <input type="radio">
+        <input type="radio" value="definitely" name="recommend">
         <label>Definitely</label>
 
-        <input type="radio">
+        <input type="radio" value="maybe" name="recommend">
         <label>Maybe</label>
         
-        <input type="radio">
+        <input type="radio" value="not sure" name="recommend">
         <label>Not sure</label>
 
         <p>What is your favorite feature of freeCodeCamp?</p>
 
         <select>
             <option>Select an option</option>
-            <option value="Student">Student</option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
-            <option value=""></option>
+            <option value="Student">Challenges</option>
+            <option value="Projects">Projects</option>
+            <option value="Community">Community</option>
+            <option value="Open Source">Open Source</option>
         </select><br>
 
         <p>What would you like to see improved? (Check all that apply)</p>
 
-         <input type="radio">
-        <label>Definitely</label>
+        <input type="checkbox" value="front-end projects">
+        <label>Front-end Projects</label>
 
-        <input type="radio">
-        <label>Maybe</label>
+        <input type="checkbox" value="back-end projects">
+        <label>Back-end Projects</label>
         
-        <input type="radio">
-        <label>Not sure</label><br>
+        <input type="checkbox" value="data visualization">
+        <label>Data Visualization</label>
+
+        <input type="checkbox" value="challenges">
+        <label>Challenges</label>
+
+        <input type="checkbox" value="open source community">
+        <label>Open Source Community</label>
+        
+        <input type="checkbox" value="gitter help rooms">
+        <label>Gitter help rooms</label>
+
+        <input type="checkbox" value="city meetups">
+        <label>City Meetups</label>
+
+        <input type="checkbox" value="wiki">
+        <label>Wiki</label>
+
+        <input type="checkbox" value="forum">
+        <label>Forum</label>
+
+        <input type="checkbox" value="additional courses">
+        <label>Additional Courses</label><br>
 
         <p>Any comments or suggestions?</p>
 
