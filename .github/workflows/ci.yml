@@ -14,20 +14,17 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
           node-version: '24.11'  
+        
+      - name: Install pnpm
+        run: npm install -g pnpm
 
-      - name: Verify Node.js and pnpm installation
-        working-directory: ./free-code-camp/react
-        run: |
-          node -v  
-          pnpm --version  
-
-      - name: Bun install packages
+      - name: pnpm install packages
         working-directory: ./free-code-camp/react
         run: pnpm install
 
