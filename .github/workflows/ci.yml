@@ -21,10 +21,11 @@ jobs:
         with:
           node-version: '24.11'  
 
-      - name: Verify Node.js and npm installation
+      - name: Verify Node.js and pnpm installation
+        working-directory: ./free-code-camp/react
         run: |
           node -v  
-          npm --version  
+          pnpm --version  
 
       - name: Bun install packages
         working-directory: ./free-code-camp/react
