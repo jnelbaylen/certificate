@@ -1,0 +1,8 @@
+
+<h1>Hello from Camperbot!</h1>
+<heading2>About</heading2>
+
+<pp>My name is Camperbot and I love learning new things.</pp>
+
+<h3>Background and Interests<h3/>
+<pp>I enjoy solving puzzles.</pp> 
