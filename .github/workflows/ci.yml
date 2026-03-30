@@ -1,0 +1,35 @@
+name: CI Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24.11'  
+
+      - name: Verify Node.js and npm installation
+        run: |
+          node -v  
+          npm --version  
+
+      - name: Bun install packages
+        working-directory: ./free-code-camp/react
+        run: pnpm install
+
+      - name: Build Packages
+        working-directory: ./free-code-camp/react
+        run: pnpm build
